@@ -1,0 +1,14 @@
+파일 찾는 법
+
+locate *.log : log확장자로 끝나는 모든파일 (DB를 통해 파일을 찾기때문에 빠름)
+
+find : 디렉토리를 통해 파일을 찾음.
+find / -name *.log : 루트 디렉토리에서부터 log확장자를 가지는 모든 파일을 찾음.
+(만약 permission 문제가 있을 경우 앞에 sudo를 붙이면 된다.)
+
+find . -type f -name "tecmint.txt" -exec rm -f {} \; :
+파일의 형태를 가지고 이름이 tecmint.txt인 파일을 묻지도 따지지도 말고 삭제 실행.
+
+whereis ls : ls의 위치를 찾음
+$PATH : 이 변수에 담긴 디렉토리 하위의 있는 파일들은 전역으로 쓸 수 있음.
+cd ~ : 현재 사용자의 home 디렉토리로 이동

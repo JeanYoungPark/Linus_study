@@ -1,0 +1,5 @@
+웹서버 (아파치)
+apt-get으로 설치
+/etc/apache2/apache2.conf : 설정파일
+/etc/apache2/sites-enabled/000-default.conf : 이 안에 DocumentRoot가 있다.
+/var/log/apache2 : 이곳에 error낫을때의 log를 볼 수 있는 파일이 있다.

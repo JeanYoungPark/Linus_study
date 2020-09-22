@@ -1,0 +1,4 @@
+rsync 동기화
+( 파일 복사 가능 ) rsync -a src/ dest : src하위 파일들을 dest로 복사와 동시에 동기화가 된다.
+rsync -azP ~/rsync/src/ 아이디@ip:~/rsync/dest :
+~/rsync/src/ 하위에 있는 파일들을 압축해서 아이디@ip의 주소를 가지고 있는 곳의 ~/rsync/dest 위치로 복사한고 프로그램화 하여 shown한다.

@@ -1,0 +1,37 @@
+cat 파일명 : 파일 읽기 (인자를 받는 형식)
+cat < 파일명 : 파일 읽기
+cat : input 방식으로 값을 받음
+cp : 복사
+
+IO Redirection
+> || 1> : 정상실행 내용 저장
+2> : 오류내용 저장
+
+head n1 < hello.txt > one.txt
+hello.txt에서 한줄만 one.txt에 저장
+-n1 : 한줄
+>> : append
+/dev/null : 낭떠러지
+
+shell의 종류
+echo $0 : 현재 사용하고 있는  shell 확인
+bash(기본탑재) , zsh (명령어 차이가 있다.)
+
+shell script 작성법
+1.nano로 들어간다.
+
+* 띄어쓰기 주의 *
+#!/bin/bash	약속 되어있는 시작.
+if ! [ -d bak ]; then 만약 디렉토리 bak이 없다면
+        mkdir bak	디렉도리 bak을 만든다.
+fi		그외의 경우에는
+cp *.log bak	확장자가 .log이 모든 파일을 bak라는 디렉토리에 복사한다.
+
+접근이 안되는 backup파일에(shell script파일) x라는 권한을 주기위해 실행하는 명령어
+chmod +x backup
+
+./backup : 실행
+
+alias l='ls -al' : 변수를 만들어주는 역할
+.bashrc : shell이 시작할때 작동하는 프로그램 (다양한 변수지정이 가능해질 듯)
+

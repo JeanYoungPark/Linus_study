@@ -1,0 +1,20 @@
+파일, 디렉토리 권한
+ls -l 파일명 : 파일의 상세보기
+-rw-rw-rw- 1 jeanfree1 jeanfree1 0 Aug 17 18:59 perm.txt
+- : type
+rw-rw-rw- : access mode
+* owner의 권한
+* group의 권한
+* other의 권한
+r : read, w : write , x : excute
+jeanfree1 jeanfree1 : owner, group
+
+chmod  o-r 파일명: other의 read권한을 빼도록 변경 (더하기는 추가)
+x : 실행파일 실행가능 여부
+
+디렉토리의 권한 설정시 내부의 파일들도 영향을 받는다.
+chmod -R o+w 파일명 : 파일내부의 모든 디렉토리가 영향을 받는다.
+
+권한을 숫자로도 지정할 수 있다. 
+(그 외 레퍼런스 참조)
+ex) 111,110, 777 등등

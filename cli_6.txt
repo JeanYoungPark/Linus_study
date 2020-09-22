@@ -1,0 +1,5 @@
+id : 나의정보
+who : 현재 이 시스템에 접속한 사람들 목록
+su - root : 루트권한을 가진 사용자로 접근하는 방법 (조심, 안쓰는게 좋음)
+sudo passwd -u root : 루트권한 접근허용
+sudo passwd -ㅣroot : 루트권한 접근비허용

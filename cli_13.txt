@@ -1,0 +1,6 @@
+ssh key
+ssh-keygen : id_rsa의 파일에 보안키같은 것이 생성됨
+~/ .ssh 하위의 id_rsa은 외부에 노출되면 안되는 키이고 id_rsa.pub은 외부에 노출되어도 괜찮다.
+
+로그인 없이 로그인 하고자 하는 컴퓨터의 ~/ .ssh 하위에 있는 authorized_keys라는 파일 끝에 위에서 만들었던 id_rsa.pub의 내용을 붙여넣기 한다.
+안전하게 붙여넣는 방법 : ssh-copy-id egoing@192.168.2.2 ( 로그인하고자 하는 컴퓨터의 아이피 )
